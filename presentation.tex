@@ -172,7 +172,7 @@ and train only the newly introduced elements.", }
 
 \note{ }
 
-\begin{frame}{Why did I choose LoRA?}
+\begin{frame}{Why LoRA?}
 
   \begin{itemize}
     \setlength\itemsep{1em}
@@ -292,7 +292,83 @@ and train only the newly introduced elements.", }
 \end{frame}
 
 
+\begin{frame}{}
 
+  \begin{center}
+    \Huge \color[rgb]{1,1,1}Intent and Resource Extraction \\ from Network Device Configuration
+  \end{center}
+
+\end{frame}
+
+
+\begin{frame}{Fine-tuning Pipeline}
+
+      \begin{figure}
+        \includegraphics[width = \textwidth]{images/fine-tuning-pipeline.png}
+      \end{figure}
+
+\end{frame}
+
+\begin{frame}{Using new model}
+
+  \begin{figure}
+    \includegraphics[width = \textwidth]{images/fine-tuning-e2e-poc.png}
+  \end{figure}
+
+\end{frame}
+
+\begin{frame}{Evaluation}
+
+  \texttt{Qwen2.5-Coder-32B-Instruct}
+
+  \begin{itemize}
+    \setlength\itemsep{1em}
+    \item Data Extraction Match: 0.86
+    \item JSON Validity: 1.0
+    \item F1: 
+  \end{itemize}
+
+  \texttt{OpenAI GPT-4.0}
+  \begin{itemize}
+    \setlength\itemsep{1em}
+    \item Data Extraction Match: 0.09
+    \item JSON Validity: 0.98
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Challanges}
+
+  \begin{itemize}
+    \setlength\itemsep{1em}
+    \item Confusion between similar schemas
+    \item IP Address + mask to CIDR
+    \item 
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Lessons}
+
+  \begin{itemize}
+    \setlength\itemsep{1em}
+    \item One model for each schema
+    \item Generating parser template
+    \item 
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Tool Stack Fine-tuning Pipeline}
+
+  \begin{itemize}
+    \setlength\itemsep{1em}
+    \item \href{https://github.com/unslothai/unsloth}{unsloth}
+    \item \href{https://github.com/vllm-project/vllm}{vLLM}
+    \item \href{https://github.com/mlflow/mlflow}{MLflow}
+  \end{itemize}
+
+\end{frame}
 
 {
   \setbeamercolor{background canvas}{bg=black}
