@@ -165,10 +165,22 @@ and train only the newly introduced elements.", }
     \item \href{https://arxiv.org/abs/2106.09685}{arXiv:2106.09685}, 2021, Microsoft
     \item \url{https://github.com/microsoft/LoRA}
     \item Freezes the pretrained model weights
-    \item Adding rank-decompostion matrices
+    \item Adding low-rank matrices into each transformer layer
   \end{itemize}
 
-  
+\end{frame}
+
+\note{ }
+
+\begin{frame}{Why did I choose LoRA?}
+
+  \begin{itemize}
+    \setlength\itemsep{1em}
+    \item Minimizing memory consumption
+    \item Enabling fine-tuning on hardware with limited resources
+    \item Learning task-specific transformations without altering original model structure
+  \end{itemize}
+
 \end{frame}
 
 \note{ }
