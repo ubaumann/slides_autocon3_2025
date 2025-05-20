@@ -324,7 +324,6 @@ and train only the newly introduced elements.", }
     \setlength\itemsep{1em}
     \item Data Extraction Match: 0.86
     \item JSON Validity: 1.0
-    \item F1: 
   \end{itemize}
 
   \texttt{OpenAI GPT-4.0}
@@ -342,7 +341,7 @@ and train only the newly introduced elements.", }
     \setlength\itemsep{1em}
     \item Confusion between similar schemas
     \item IP Address + mask to CIDR
-    \item 
+    \item Dataset quality
   \end{itemize}
 
 \end{frame}
@@ -353,7 +352,8 @@ and train only the newly introduced elements.", }
     \setlength\itemsep{1em}
     \item One model for each schema
     \item Generating parser template
-    \item 
+    \item Validate dataset
+    \item LLM size
   \end{itemize}
 
 \end{frame}
@@ -377,5 +377,24 @@ and train only the newly introduced elements.", }
     \end{center}
   \end{frame}
 }
+
+\begin{frame}{What is missing?}
+
+  \begin{itemize}
+    \setlength\itemsep{1em}
+    \item Training data sets
+    \item Benchmarks
+    \item Real world show cases
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+
+  \begin{figure}
+    \includegraphics[width = \textwidth]{images/mlflow.png}
+  \end{figure}
+
+\end{frame}
 
 \end{document}
